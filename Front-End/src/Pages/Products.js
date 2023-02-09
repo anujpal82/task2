@@ -66,15 +66,6 @@ export const Products = ({ products }) => {
         (activePage - 1) * offset + offset
       )
     );
-    console.log(
-      state.products.slice(
-        (activePage - 1) * offset,
-        (activePage - 1) * offset + offset
-      ),
-      activePage,
-      offset,
-      "line 62 from  Product"
-    );
   }, [state]);
 
   return (
